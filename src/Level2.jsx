@@ -50,7 +50,7 @@ function Level2() {
     <span className='bg-red-900 text-xl ml-3 text-gray-400'>this section is filled with adorable things everyone loves to see</span>
     <span> please hover around to make the images visible 🙂</span>
     <span className=' text-xl mb-4 w-full font-semibold bg-green-900 text-gray-400'>i hope you like puppies and kittens</span>
-<div className=' w-full'>
+<div className=' w-full' id='Level2'>
 <img onMouseEnter={()=>setShow('opacity-100')} className={ show +' absolute '} src='images/error.png' />
 <img onMouseEnter={()=>setShow1('opacity-100')} className={ show1 +' absolute top-[220px]'} src='images/error.png' />
 <img onMouseEnter={()=>setShow2('opacity-100')} className={ show2 +' absolute top-[300px]'} src='images/error.png' />
