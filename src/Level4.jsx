@@ -2,10 +2,19 @@ import React, { useState } from 'react'
 
 function Level4() {
   const [style, setStyle] = useState('')
+  const [submited, setSubmited] = useState('')
+  const [Hide, setHide] = useState('')
+function submit(ev){
+  ev.preventDefault()
+  setHide("hidden")
+  setSubmited("NOT SUBMITTED SUCCESSFULLY")
+}
+ 
   return (
     <div className=' h-screen flex p-5 justify-around'>
-    If you have any comment's or bug reports or if you're so happy with your experience here and wanted to contact me, please fill this form    
-    <form className=' flex flex-col p-2 border'>
+    <h2 className={ Hide + "  w-[600px]"} >If you have any comment's or bug reports or if you're so happy with your experience here and wanted to contact me, please fill this form, the form has been debuged and works 100%</h2>
+    <span className=' text-3xl text-green-900 ' >{submited}</span>
+    <form className=' flex flex-col p-2 border' onSubmit={(ev)=>submit(ev)}>
    <h2 className=' text-2xl font-semibold'> Easy form </h2>
     <span>First letter of your Name</span>
       <input type='text' required className=' border' maxLength={1} />
@@ -69,6 +78,7 @@ function Level4() {
     </form>
     <div className=''>
     <h2 className=' text-2xl font-semibold'> Hard form </h2>
+
     <form onMouseLeave={()=>setStyle('flex')} onMouseEnter ={()=>setStyle('hidden')} className={ style +' p-2 flex flex-col border rounded-lg '}>
     <span> Full Name </span>
     <input className=' border rounded-md' required />
