@@ -4,6 +4,7 @@ function Level4() {
   const [style, setStyle] = useState('')
   return (
     <div className=' h-screen flex p-5 justify-around'>
+    If you have any comment's or bug reports or if you're so happy with your experience here and wanted to contact me, please fill this form    
     <form className=' flex flex-col p-2 border'>
    <h2 className=' text-2xl font-semibold'> Easy form </h2>
     <span>First letter of your Name</span>
